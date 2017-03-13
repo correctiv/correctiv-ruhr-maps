@@ -1,0 +1,140 @@
+.cruhr-viz {
+
+  margin-top: 20px;
+  position: relative;
+
+  @media (max-width: 991px) {
+
+    margin-top: 5px;
+
+  }
+
+  &__map {
+
+    padding-top: 20px;
+    padding-right: 20px;
+
+    @media (max-width: 991px) {
+
+      padding-top: 30px;
+      padding-right: 0;
+
+    }
+
+  }
+
+  &__svg {
+
+    path {
+
+      stroke-width: 2px;
+      stroke: lighten(#1a1a1a, 30%);
+
+      &.-hilight {
+
+        stroke-width: 5px;
+        stroke: #c81455;
+
+      }
+
+    }
+
+
+  }
+
+  &__selector {
+
+    select {
+
+      background: white;
+      margin: 0;
+      padding: 5px;
+
+      option {
+
+        padding: 0px;
+
+      }
+
+    }
+
+  }
+
+  &__infobox {
+
+    position: absolute;
+    top: 35px;
+    padding-left: 9px;
+
+  }
+
+
+  &__legend-wrapper {
+
+    ul {
+
+      font-size: 14px;
+      padding: 0;
+      margin-top: 10px;
+
+      li {
+
+        position: relative;
+        list-style: none;
+        padding-bottom: .2em;
+        padding-left: 20px;
+
+        @media (max-width: 991px) {
+
+          padding-bottom: 20px;
+          padding-right: 10px;
+          padding-left: 0;
+          display: inline-block;
+
+        }
+
+        span {
+
+          display: inline-block;
+          position: absolute;
+          margin-top: .3em;
+          left: 0;
+          width: 15px;
+          height: 15px;
+
+          @media (max-width: 991px) {
+
+            left: 0;
+            top: 20px;
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .figure {
+
+    &__credits {
+
+      margin-top: 14px;
+      color: #9c9c9c;
+      font-size: 14px;
+      line-height: 1.4;
+
+      &>p:first-of-type:before {
+        // remove icon
+        content: '';
+        padding: 0;
+      }
+    }
+
+  }
+
+
+}
+

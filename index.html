@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mapping nrw</title>
+  <link rel="stylesheet" href="./correctiv-ruhr-maps.min.css" type="text/css" media="screen" title="nrw map" charset="utf-8">
+</head>
+<body>
+
+  <figure class="cruhr-viz figure -paragraph-width">
+    <div class="cruhr-viz figure__container">
+      <div class="cruhr-viz__selector" id="cruhr-viz__selector--17"></div>
+      <div class="cruhr-viz__infobox" id="cruhr-viz__infobox--17"></div>
+      <div class="cruhr-viz__map" id="cruhr-viz__map--17"></div>
+      <figcaption class="cruhr-viz__legend-wrapper figure__caption">
+        <div class="figure__title"><p>Impfquote</p></div>
+        <div class="cruhr-viz__legend" id="cruhr-viz__legend--17"></div>
+        <div class="figure__credits">
+          <p><strong>Daten:</strong> <a href="">Landeszentrum Gesundheit NRW</a></p>
+        </div>
+      </figcaption>
+    </div>
+  </figure>
+
+  <script src="./lib/d3.v4.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./lib/topojson.v2.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./lib/riot.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./lib/d3-playbooks.maps.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./lib/d3-playbooks.riot-components.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./correctiv-ruhr-maps.min.js" type="text/javascript" charset="utf-8"></script>
+
+  <script>
+    d3.playbooks.correctivRuhrMaps.districts({
+      id: 17,
+      dataUrl: './data/2017-03-13_masern-impfquote.csv',
+      colorSteps: '',
+      colorReverse: '',
+      selector: 'true',
+      path: '.',
+      infoboxTemplate: 'Impfquote: <strong>{display_value}</strong>',
+      legendTemplate: '{label} %'
+    })
+  </script>
+
+</body>
+</html>

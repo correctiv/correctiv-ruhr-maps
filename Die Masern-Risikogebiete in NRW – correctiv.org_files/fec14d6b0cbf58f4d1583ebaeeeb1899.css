@@ -1,0 +1,128 @@
+.page__section-header {
+  color: #1a1a1a;
+}
+.page__section-header:after {
+  background: #1a1a1a;
+}
+.page__section-link:link,
+.page__section-link:visited,
+.page__section-link:hover,
+.page__section-link:focus,
+.page__section-link:active {
+  color: #1a1a1a;
+}
+.page__section-headline {
+  color: #1a1a1a;
+}
+.header {
+  background: #f9c280;
+}
+.pagebanner {
+  background: #efab59;
+  height: 120px;
+}
+@media (max-width: 767px) {
+  .pagebanner {
+    height: 70px;
+  }
+}
+.page__section-category a {
+  background: #578574;
+}
+.page__section-category a:hover,
+.page__section-category a:focus,
+.page__section-category a:active {
+  background: #578574;
+}
+.article-header__section-title {
+  background: #578574;
+}
+.article-header__section-title:hover,
+.article-header__section-title:focus,
+.article-header__section-title:active {
+  background: #578574;
+}
+.featured-element__author-name {
+  color: #578574;
+}
+.pagebanner__title {
+  margin: 0;
+  padding: 0;
+  height: 120px;
+  width: 560px;
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url('theme_logo_en.svg') no-repeat left bottom;
+}
+[lang=de] .pagebanner__title {
+  background: url('theme_logo_de.svg') no-repeat left bottom;
+}
+@media (max-width: 767px) {
+  .pagebanner__title {
+    height: 70px;
+    width: 300px;
+    margin-top: 10px;
+  }
+}
+.pagebanner__title:after {
+  display: none;
+}
+.callout__claim {
+  color: #4d4d4d;
+}
+.callout__badge {
+  background: #578574;
+}
+.nav-primary__link {
+  color: #1a1a1a;
+}
+.nav-primary__link:before {
+  background: #1a1a1a;
+}
+.nav-primary__link.-active,
+.nav-primary__link:focus,
+.nav-primary__link:active,
+.nav-primary__link:hover {
+  color: #578574;
+}
+.nav-primary__link.-active:before,
+.nav-primary__link:focus:before,
+.nav-primary__link:active:before,
+.nav-primary__link:hover:before {
+  background: #578574;
+}
+.pagebanner__title {
+  height: 215px;
+  top: -95px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .pagebanner__title {
+    height: 120px;
+    top: -60px;
+  }
+}
+a {
+  color: #578574;
+}
+.callout__badge {
+  background: #a07337;
+}
+.callout__badge:focus,
+.callout__badge:active,
+.callout__badge:hover {
+  background: #578574;
+}
+.nav-primary__link.-active,
+.nav-primary__link:focus,
+.nav-primary__link:active,
+.nav-primary__link:hover {
+  color: #578574;
+}
+.nav-primary__link.-active:before,
+.nav-primary__link:focus:before,
+.nav-primary__link:active:before,
+.nav-primary__link:hover:before {
+  background: #578574;
+}
