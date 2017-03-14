@@ -14,13 +14,13 @@ example:
 ```json
 {
   "type": "districts",
-  "data": "2017-03-13_masern-impfquoten",
+  "data": "2017-03-14_masern-impfquoten",
   "figureTitle": "Impfquote",
   "dataSource": "Landeszentrum Gesundheit NRW",
   "dataSourceUrl": "https://www.lzg.nrw.de/",
-  "colorSteps": 5,
-  "colorReverse": true,
-  "selector": true,
+  "colorSteps": "5",
+  "colorReverse": "true",
+  "selector": "true",
   "infoboxTemplate": "Impfquote: <strong>{display_value}</strong>",
   "legendTemplate": "{label} %"
 }
@@ -32,13 +32,14 @@ example:
 ```html
 <script>
 d3.playbooks.correctivRuhrMaps.%type%({
+  id: "%id%",
   path: "%path%",
-  dataUrl: "%path%data/%data%",
+  dataUrl: "%path%data/%data%.csv",
   colorSteps: "%colorSteps%",
   colorReverse: "%colorReverse%",
   selector: "%selector%",
-  infoboxTemplate: "%infoboxTemplate",
-  legendTemplate: "%legendTemplate"
+  infoboxTemplate: "%infoboxTemplate%",
+  legendTemplate: "%legendTemplate%"
 })
 </script>
 ```
