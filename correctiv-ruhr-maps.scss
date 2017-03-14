@@ -1,13 +1,8 @@
 .cruhr-viz {
 
+  font-size: 14px;
   margin-top: 20px;
   position: relative;
-
-  @media (max-width: 991px) {
-
-    margin-top: 5px;
-
-  }
 
   &__map {
 
@@ -49,9 +44,11 @@
       background: white;
       margin: 0;
       padding: 5px;
+      border: 1px solid gray;
 
       option {
 
+        font-size: 14px;
         padding: 0px;
 
       }
@@ -63,8 +60,18 @@
   &__infobox {
 
     position: absolute;
+    z-index: 1;
+    background-color: rgba(256, 256, 256, .8);
+    border: 1px solid gray;
     top: 35px;
-    padding-left: 9px;
+    margin-top: 3px;
+    padding: 9px;
+
+    &.-empty {
+
+      visibility: hidden;
+
+    }
 
   }
 
