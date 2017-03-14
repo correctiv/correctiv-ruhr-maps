@@ -33,12 +33,16 @@
   <script>
     d3.playbooks.correctivRuhrMaps.districts({
       id: 17,
-      dataUrl: './data/2017-03-13_masern-impfquote.csv',
-      colorSteps: '',
-      colorReverse: '',
+      dataUrl: './data/2017-03-14_masern-impfquote.csv',
+      colorSteps: '5',
+      colorReverse: 'true',
       selector: 'true',
       path: '.',
-      infoboxTemplate: 'Impfquote: <strong>{display_value}</strong>',
+      infoboxTemplate: `
+        Impfquote: <strong>{display_value}</strong><br>
+        Untersuchte Kinder: <strong>{einschulung}</strong><br>
+        gueltiger Impfpass: <strong>{impfpass}</strong>
+      `,
       legendTemplate: '{label} %'
     })
   </script>
